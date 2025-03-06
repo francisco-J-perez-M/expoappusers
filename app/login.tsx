@@ -8,7 +8,10 @@ export default function LoginScreen() {
     const router = useRouter();
 
     const handleLogin = () => {
+        Alert.alert("Debug", "Entrando a handleLogin");
+        
         if (email === "hola@gmail.com" && password === "123456") {
+            Alert.alert("Éxito", "Redirigiendo...");
             router.replace("/(tabs)");
         } else {
             Alert.alert("Error", "Credenciales inválidas");
