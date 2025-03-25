@@ -1,5 +1,5 @@
 import { storeData } from "../utils/storage";
-const API_URL = 'http://192.168.1.14:3000';
+const API_URL = 'http://18.117.11.38:3000/usuarios';
 
 export const loginUser = async (email: string, password: string) => {
     try {
